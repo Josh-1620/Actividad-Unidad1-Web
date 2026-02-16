@@ -27,14 +27,7 @@ class WebRequestHandler(BaseHTTPRequestHandler):
     self.wfile.write(response.encode("utf-8"))
 
 
-    def get_response(self):
-        return f"""
-    <h1> Hola Web </h1>
-    <p> URL Parse Result : {self.url()}         </p>
-    <p> Path Original: {self.path}         </p>
-    <p> Headers: {self.headers}      </p>
-    <p> Query: {self.query_data()}   </p>
-"""
+   
 
 
 if __name__ == "__main__":
